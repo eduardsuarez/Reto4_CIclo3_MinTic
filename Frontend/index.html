@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto 4 </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form>
+      <div style="text-align: center">
+        <h2>Categoria</h2>
+        <input type="number" id="idCat" placeholder="id Eliminar/Actualizar" style="width: 110px;" />
+        <button id="beliminarCat">Eliminar</button><br/> 
+        <input
+          type="text"
+          id="nameCat"
+          placeholder="nombre de la categoria"
+          maxlength="45" 
+        /><br />
+        <input
+          type="text"
+          id="descriptionCat"
+          placeholder="descripcion"
+          maxlength="250"
+        /><br />
+        <button id="bmostrarCat">Mostrar categorias</button>
+        <button id="bguardarCat">Guardar categoria</button>
+        <button id="bactualizarCat">Actualizar categoria</button>
+      </div>
+    </form>
+
+    <div id="informacionCat"></div>
+    <script src="JS/Category.js"></script>
+
+    <form>
+      <div style="text-align: center">
+        <h2>Creación de auditorios</h2>
+        <input
+          type="number"
+          id="idAud"
+          placeholder="id Elim/Actu Auditorio" style="width: 110px;"
+        />
+        <button id="beliminarAud">Eliminar </button><br />
+        <input
+          type="text"
+          id="owner"
+          placeholder="digite el owner del auditorio"
+          maxlength="45"
+        /><br />
+        <input
+          type="number"
+          id="capacity"
+          placeholder="digite la capacidad"
+          maxlength=""
+        /><br />
+        <input
+          type="text"
+          id="description"
+          placeholder="digite la descripción"
+          maxlength="250"
+        /><br />
+        <input type="text" id="nameAud" placeholder="digite el nombre" /><br />
+        <br />
+        <button id="bmostrarAud">Mostrar Auditorios</button>
+        <button id="bguardarAud">Guardar Auditorio</button>
+        <button id="bactualizarAud">Actualizar Auditorio</button>
+      </div>
+    </form>
+
+    <div id="informacionAud"></div>
+    <script src="JS/scriptAud.js"></script>
+
+    <form>
+      <div style="text-align: center">
+        <h2>Creación de clientes</h2>
+        <input
+          type="number"
+          id="idCli"
+          placeholder="id Elim/Actu Cliente" style="width: 110px;"
+        />
+        <button id="beliminarCli">Eliminar </button><br />
+        <input
+          type="text"
+          id="nombre"
+          placeholder="digite el nombre cliente"
+          maxlength="250"
+        /><br />
+        <input
+          type="text"
+          id="email"
+          placeholder="digite el email"
+          maxlength="45"
+        /><br />
+        <input type="number" id="age" placeholder="digite la edad" /><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="digite la contraseña"
+          maxlength="45"
+        /><br />
+        <br />
+        <button id="bmostrarCli">Mostrar Clientes</button>
+        <button id="bguardarCli">Guardar Cliente</button>
+        <button id="bactualizarCli">Actualizar Cliente</button>
+        
+      </div>
+    </form>
+
+    <div id="informacionCli"></div>
+    <script src="JS/scriptCli.js"></script>
+
+    <form>
+      <div style="text-align: center">
+        <h2>Registro de Mensajes</h2>
+        <input
+          type="number"
+          id="idMes"
+          placeholder="id Elim/Actu mensaje" style="width: 110px;"
+        />
+        <button id="beliminarMes">Eliminar</button><br />
+        <input
+          type="text"
+          id="messagetext"
+          placeholder="digite el mensaje"
+          maxlength="250"
+        /><br />
+        <br />
+        <button id="bmostrarMes">Mostrar Mensajes</button>
+        <button id="bguardarMes">Guardar Mensaje</button>
+        <button id="bactualizarMes">Actualizar Mensaje</button>
+        
+      </div>
+    </form>
+
+    <div id="informacionMes"></div>
+    <script src="JS/scriptMes.js"></script>
+
+    <form>
+      <div style="text-align: center">
+        <h2>Creación de Reservas</h2>
+        <input
+          type="number"
+          id="idRes"
+          placeholder="id Elim/Actu Reserva" style="width: 110px;"
+        />
+        <button id="beliminarRes">Eliminar</button><br />
+        <input
+          type="date"
+          id="startDate"
+          placeholder="digite fecha de inicio"
+        /><br />
+        <input
+          type="date"
+          id="devolutionDate"
+          placeholder="ingrese la fecha de devolución"
+        />
+        <br />
+        <br />
+        <button id="bmostrarRes">Mostrar Reservas</button>
+        <button id="bguardarRes">Guardar Reserva</button>
+        <button id="bactualizarRes">Actualizar Reserva</button>
+        
+      </div>
+    </form>
+
+    <div id="informacionRes"></div>
+    <script src="JS/Reservation.js"></script>
+
+    <form>
+      <div style="text-align: center">
+        <h2>Creación de usuarios administradores</h2>
+        <input
+          type="number"
+          id="idAdm"
+          placeholder="id Elim/Actu administrador" style="width: 110px;"
+        />
+        <button id="beliminarAdm">Eliminar</button><br />
+        <input
+          type="text"
+          id="nameAdm"
+          placeholder="ingrese el nombre"
+          maxlength="250"
+        />
+        <br />
+        <input
+          type="text"
+          id="emailAdm"
+          placeholder="ingrese el email"
+          maxlength="45"
+        />
+        <br />
+        <input
+          type="password"
+          id="passwordAdm"
+          placeholder="ingrese la contraseña"
+          maxlength="45"
+        />
+        <br />
+        <button id="bmostrarAdm">Mostrar administradores</button>
+        <button id="bguardarAdm">Guardar administrador</button>
+        <button id="bactualizarAdm">Actualizar administrador</button>
+        
+      </div>
+    </form>
+    <div id="informacionAdm"></div>
+    <script src="JS/Administradores.js"></script>
+  </body>
+</html>
